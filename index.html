@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html id="html">
+  <head>
+    <title>The Cost Of Living</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body id="body">
+    <!-- INTRODUCTION -->
+
+    <h1>
+      <strong>C</strong><small>OST</small> <strong>OF</strong> <strong>L</strong
+      ><small>IVING</small>
+    </h1>
+    <img src="images/flag.png" alt="flag" />
+    <p id="disclaimer">
+      All numbers are based on averages, they can vary from case to case.
+    </p>
+    <hr />
+    <p>
+      The cost of living has been on the rise for years, and is an important
+      factor for everybody. Living within your means is necessary to prevent
+      debt and hardship. This calculator will reveal the necessary income to
+      support your lifestyle.
+    </p>
+
+    <!-- RENT TABLE -->
+
+    <table>
+      <tr>
+        <td>AVG RENT</td>
+        <td>$1600</td>
+        <td>$2400</td>
+        <td>$3100</td>
+        <td>$3900</td>
+      </tr>
+      <tr>
+        <td>BEDROOMS</td>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+      </tr>
+      <tr>
+        <td>UNPAID UTIL</td>
+        <td>+$200</td>
+        <td>+$300</td>
+        <td>+$400</td>
+        <td>+$500</td>
+      </tr>
+    </table>
+    <p>
+      These costs vary greatly from place to place, with some cities having
+      double the price for less. Rent is not all that must be considered
+      however.
+    </p>
+    <hr />
+
+    <!-- QUESTIONS -->
+
+    <h2>MONTHLY COSTS</h2>
+    <p>How much will you spend a month on the following?</p>
+    <p>PEOPLE # : <input id="people" type="number" /></p>
+    <p>SAVINGS $ : <input id="savings" type="number" /></p>
+    <p>ENTERTAINMENT $ : <input id="entertain" type="number" /></p>
+    <p>FOOD $ : <input id="food" type="number" /></p>
+    <p>BEDROOMS # : <input id="bedrooms" type="number" /></p>
+    <p>VEHICLES # : <input id="vehicles" type="number" /></p>
+    <button id="calc-total">CALCULATE</button>
+
+    <hr />
+
+    <!-- INCOME AND TAXES -->
+
+    <h2>REQUIRED INCOME</h2>
+    <p>To support the lifestyle you want, you must make :</p>
+    <p>$ <span id="weeklyInc">----</span> A WEEK</p>
+    <p>$ <span id="monthlyInc">----</span> A MONTH</p>
+    <p>$ <span id="yearlyInc">----</span> A YEAR</p>
+    <p>The average Canadian loses 25.6% of their total income to tax.</p>
+    <p>Would you Like to know your total with tax included?</p>
+    <button id="calc-tax">CALCULATE TAX</button>
+    <p>Your total with taxes is : $ <span id="totalTaxes">----</span></p>
+    <button id="calc-clear">CLEAR CALCULATOR</button>
+    <hr />
+
+    <!-- % OF THE POPULATION -->
+
+    <table>
+      <tr>
+        <td>INCOME</td>
+        <td>$22000</td>
+        <td>$40000</td>
+        <td>$50000</td>
+        <td>$81000</td>
+        <td>$125000</td>
+      </tr>
+      <tr>
+        <td>TOP %</td>
+        <td id="80perc">80%</td>
+        <td id="60perc">60%</td>
+        <td id="40perc">40%</td>
+        <td id="20perc">20%</td>
+        <td id="10perc">10%</td>
+      </tr>
+    </table>
+    <script defer src="script.js"></script>
+  </body>
+</html>
